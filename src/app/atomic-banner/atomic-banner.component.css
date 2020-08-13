@@ -1,0 +1,18 @@
+.atomicSymbolText, .atomicNumberText, .atomicNameText {
+    margin-bottom: 0px;
+}
+
+.atomicSymbolText{
+ float: left;
+ font-weight: bold;
+ font-size: medium;
+}
+
+.atomicNumberText{
+    float: right;
+    font-weight: bold;
+    font-size: medium;
+}
+.atomicNameText{
+    font-size: small;
+}
