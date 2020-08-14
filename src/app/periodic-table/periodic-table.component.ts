@@ -14,8 +14,16 @@ export class PeriodicTableComponent implements OnInit {
   }
 
   ngOnInit() {
-
-
     return this.elementService.getElements().subscribe(data => this.elements$ = data)
+  }
+
+  onClickOnElement(elementAtomicNumber){
+    console.log(elementAtomicNumber);
+  }
+
+  getTestClass(groupBlock : string){
+
+    let regex = new RegExp(/ /, 'gm');
+    return "style-" + groupBlock.replace(regex,"-");;
   }
 }
