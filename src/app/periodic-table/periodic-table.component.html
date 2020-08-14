@@ -1,41 +1,43 @@
 <div class="container">
     <div class="row">
         <!-- ROW 1 -->
-        <div class="col" *ngFor="let item of elements$ | slice:0:1;">
+        <div class="col" (click)="onClickOnElement(item.atomicNumber)" [ngClass]="getTestClass(item.groupBlock)" *ngFor="let item of elements$ | slice:0:1;">
             <app-atomic-banner [element]="item"></app-atomic-banner>
         </div>
+        <!-- <div class="ghost-col-16"></div> -->
         <div class="ghost-col" *ngFor="let item of [].constructor(16); let i = index"></div>
-        <div class="col" *ngFor="let item of elements$ | slice:1:2;">
-            <app-atomic-banner [element]="item"></app-atomic-banner>
+        <div class="col" (click)="onClickOnElement(item.atomicNumber)" [ngClass]="getTestClass(item.groupBlock)" *ngFor="let item of elements$ | slice:1:2;">
+  
+    <app-atomic-banner  [element]="item"></app-atomic-banner>
         </div>
     </div>
     <div class="row">
         <!-- ROW 2 -->
-        <div class="col" *ngFor="let item of elements$ | slice:2:4;">
+        <div class="col" (click)="onClickOnElement(item.atomicNumber)" [ngClass]="getTestClass(item.groupBlock)" *ngFor="let item of elements$ | slice:2:4;">
             <app-atomic-banner [element]="item"></app-atomic-banner>
         </div>
 
         <div class="ghost-col" *ngFor="let item of [].constructor(10); let i = index"></div>
-        <div class="col" *ngFor="let item of elements$ | slice:4:10;">
+        <div class="col" (click)="onClickOnElement(item.atomicNumber)" [ngClass]="getTestClass(item.groupBlock)" *ngFor="let item of elements$ | slice:4:10;">
             <app-atomic-banner [element]="item"></app-atomic-banner>
         </div>
 
     </div>
     <div class="row">
         <!-- ROW 3 -->
-        <div class="col" *ngFor="let item of elements$ | slice:10:12;">
+        <div class="col" (click)="onClickOnElement(item.atomicNumber)" [ngClass]="getTestClass(item.groupBlock)" *ngFor="let item of elements$ | slice:10:12;">
             <app-atomic-banner [element]="item"></app-atomic-banner>
         </div>
 
         <div class="ghost-col" *ngFor="let item of [].constructor(10); let i = index"></div>
-        <div class="col" *ngFor="let item of elements$ | slice:12:18;">
+        <div class="col" (click)="onClickOnElement(item.atomicNumber)" [ngClass]="getTestClass(item.groupBlock)" *ngFor="let item of elements$ | slice:12:18;">
             <app-atomic-banner [element]="item"></app-atomic-banner>
         </div>
 
     </div>
     <div class="row">
         <!-- ROW 4 -->
-        <div class="col" *ngFor="let item of elements$ | slice:18:36;">
+        <div class="col" (click)="onClickOnElement(item.atomicNumber)" [ngClass]="getTestClass(item.groupBlock)" *ngFor="let item of elements$ | slice:18:36;">
             <app-atomic-banner [element]="item"></app-atomic-banner>
         </div>
 
@@ -43,51 +45,47 @@
     </div>
     <div class="row">
         <!-- ROW 5 -->
-        <div class="col" *ngFor="let item of elements$ | slice:36:54;">
+        <div class="col" (click)="onClickOnElement(item.atomicNumber)" [ngClass]="getTestClass(item.groupBlock)" *ngFor="let item of elements$ | slice:36:54;">
             <app-atomic-banner [element]="item"></app-atomic-banner>
-        <!-- <div>
-
-
-        </div> -->
         </div>
     </div>
     <div class="row">
         <!-- ROW 6 -->
-        <div class="col" *ngFor="let item of elements$ | slice:54:56;">
+        <div class="col" (click)="onClickOnElement(item.atomicNumber)" [ngClass]="getTestClass(item.groupBlock)" *ngFor="let item of elements$ | slice:54:56;">
             <app-atomic-banner [element]="item"></app-atomic-banner>
         </div>
         <div class="col">57-71</div>
-        <div class="col" *ngFor="let item of elements$ | slice:71:86;">
+        <div class="col" (click)="onClickOnElement(item.atomicNumber)" [ngClass]="getTestClass(item.groupBlock)" *ngFor="let item of elements$ | slice:71:86;">
             <app-atomic-banner [element]="item"></app-atomic-banner>
         </div>
     </div>
     <div class="row">
         <!-- ROW 7 -->
-        <div class="col" *ngFor="let item of elements$ | slice:86:88;">
+        <div class="col" (click)="onClickOnElement(item.atomicNumber)" [ngClass]="getTestClass(item.groupBlock)" *ngFor="let item of elements$ | slice:86:88;">
             <app-atomic-banner [element]="item"></app-atomic-banner>
         </div>
         <div class="col">89-103</div>
-        <div class="col" *ngFor="let item of elements$ | slice:103:118;">
+        <div class="col" (click)="onClickOnElement(item.atomicNumber)" [ngClass]="getTestClass(item.groupBlock)" *ngFor="let item of elements$ | slice:103:118;">
             <app-atomic-banner [element]="item"></app-atomic-banner>
         </div>
     </div>
     <div class="row">
-        <div class="ghost-col" *ngFor="let item of [].constructor(18); let i = index"></div>
+        <div class="ghost-col spacer" *ngFor="let item of [].constructor(18); let i = index"></div>
     </div>
     <div class="row">
         <!-- ROW 9 -->
-        <div class="ghost-col" *ngFor="let item of [].constructor(2); let i = index"></div>
+        <div class="ghost-col"  *ngFor="let item of [].constructor(2); let i = index"></div>
         
-        <div class="col" *ngFor="let item of elements$ | slice:56:71;">
+        <div class="col" (click)="onClickOnElement(item.atomicNumber)" [ngClass]="getTestClass(item.groupBlock)" *ngFor="let item of elements$ | slice:56:71;">
             <app-atomic-banner [element]="item"></app-atomic-banner>
         </div>
         <div class="ghost-col" *ngFor="let item of [].constructor(1); let i = index"></div>
     </div>
     <div class="row">
-        <!-- ROW 9 -->
-        <div class="ghost-col" *ngFor="let item of [].constructor(2); let i = index"></div>
+        <!-- ROW 10 -->
+        <div class="ghost-col"  *ngFor="let item of [].constructor(2); let i = index"></div>
         
-        <div class="col" *ngFor="let item of elements$ | slice:88:103;">
+        <div class="col" (click)="onClickOnElement(item.atomicNumber)" [ngClass]="getTestClass(item.groupBlock)" *ngFor="let item of elements$ | slice:88:103;">
             <app-atomic-banner [element]="item"></app-atomic-banner>
         </div>
         <div class="ghost-col" *ngFor="let item of [].constructor(1); let i = index"></div>
