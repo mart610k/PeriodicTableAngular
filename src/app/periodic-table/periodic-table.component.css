@@ -1,18 +1,19 @@
-
-.col, .ghost-col {
+.container{
+    margin-top: 25px;
+}
+.col, .ghost-col, .ghost-col-16{
     height: 90px;
     width: 38px;
     background: #ffffff;
     padding: 10px;
 }
-
-.col {
-    box-shadow:inset 0px 0px 0px 2px #000;
-}
 .ghost-col {
 
     flex-basis: 0;            
     flex-grow: 1;
+}
+.spacer{
+    height: 20px;
 }
 .col:hover{
     background-color: blue;
@@ -21,4 +22,46 @@
 .container {
     width: 100%;
     max-width: 90%;
+}
+
+.style-transition-metal{
+    background-color: #6d6df7;
+}
+
+.style-metalloid{
+    background-color: #d17c44;
+}
+.style-nonmetal{
+    background-color: #f8f863;
+}
+
+.style-metal{
+    background-color: #808080;
+}
+
+.style-noble-gas{
+    background-color: #fc5454;
+}
+
+.style-halogen{
+    background-color: #7fe656;
+}
+
+.style-alkaline-earth-metal{
+    background-color:#d452e6;
+}
+
+.style-alkali-metal {
+    background-color: #f56b6b;
+}
+
+.style-post-transition-metal{
+    background-color: #555555;
+}
+
+.style-lanthanoid{
+    background-color: #5ef0ac;
+}
+.style-actinoid{
+    background-color: #8156e6;
 }
