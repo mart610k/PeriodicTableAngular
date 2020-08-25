@@ -1,6 +1,4 @@
-.container{
-    margin-top: 25px;
-}
+
 .col, .ghost-col, .ghost-col-16{
     height: 90px;
     width: 38px;
@@ -65,3 +63,4 @@
 .style-actinoid{
     background-color: #8156e6;
 }
+
